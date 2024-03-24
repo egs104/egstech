@@ -8,6 +8,30 @@ function Badge(props) {
   );
 }
 
+const SkillsSection = () => {
+  const skills = [
+    'C#', '.NET', 'Azure', 'React', 'Typescript',
+    'Vite', 'Webpack', 'HTML', 'CSS', 'Angular',
+    'Java', 'Spring Boot', 'SQL', 'NoSQL', 'Redis', 'Figma'
+  ];
+
+  return (
+    <div className="mb-6">
+      <h2 className="text-xl font-semibold mb-2">Skills</h2>
+      <div className="flex flex-wrap gap-2">
+        {skills.map((skill, index) => (
+          <span
+            key={index}
+            className="bg-blue-500 text-white px-2 py-1 rounded-full text-sm"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default function Page() {
   return (
     <section>
@@ -28,17 +52,11 @@ export default function Page() {
           </Badge>
         </span> , where I get to come up with solutions to interesting business problems through code.
       </p>
+      <SkillsSection />
       <h2 className="text-xl font-semibold mb-2">What Drives Me</h2>
         <p className="prose prose-neutral dark:prose-invert mb-6">
             I thrive on <span className="font-semibold">learning new things</span>. Whether it's mastering the latest JavaScript framework or exploring design principles, I'm always hungry for knowledge and love to share cool things I learn with others. I believe that sharing knowledge not only enriches our community but also helps us grow collectively.
         </p>
-        <h2 className="text-xl font-semibold mb-2">Beyond the Code</h2>
-        <ul className="list-disc list-inside prose prose-neutral dark:prose-invert mb-6">
-            <li><span className="font-semibold">Sports Enthusiast:</span> From soccer to basketball, golf to MMA—I'm a sports junkie. There's something invigorating about the thrill of competition and the camaraderie of team spirit.</li>
-            <li><span className="font-semibold">Gamer at Heart:</span> Video games are my escape. Whether I'm exploring fantastical worlds, solving puzzles, or battling foes, gaming fuels my creativity and keeps my mind sharp.</li>
-            <li><span className="font-semibold">Family Time:</span> Nothing beats quality time with loved ones. Whether it's a cozy movie night or a weekend hike, family bonds are my anchor.</li>
-            <li><span className="font-semibold">Foodie Adventures:</span> I'm on a perpetual quest for the perfect slice of pizza, the most decadent chocolate cake, and the spiciest street tacos. Food brings people together, and I'm all in!</li>
-        </ul>
         <p className="prose prose-neutral dark:prose-invert">
             Let's connect! Whether you're a fellow developer, a curious learner, or just someone who appreciates good food, I'd love to connect. Feel free to explore my portfolio, read my blog posts, and drop me a message. Let's build something amazing together! 🚀
         </p>
