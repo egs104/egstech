@@ -10,9 +10,22 @@ function Badge(props) {
 
 const SkillsSection = () => {
   const skills = [
-    'C#', '.NET', 'Azure', 'React', 'Typescript',
-    'Vite', 'Webpack', 'HTML', 'CSS', 'Angular',
-    'Java', 'Spring Boot', 'SQL', 'NoSQL', 'Redis', 'Figma'
+    "C#",
+    ".NET",
+    "Azure",
+    "React",
+    "Typescript",
+    "Vite",
+    "Webpack",
+    "HTML",
+    "CSS",
+    "Angular",
+    "Java",
+    "Spring Boot",
+    "SQL",
+    "NoSQL",
+    "Redis",
+    "Figma",
   ];
 
   return (
@@ -39,27 +52,37 @@ export default function Page() {
         Hey, I'm Eric Suarez 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert mb-6">
-          Hello! I'm <span className="font-semibold">Eric Suarez</span>, a full-stack software engineer. By day, I'm fortunate to work at <span className="not-prose">
+        Hello! I'm <span className="font-semibold">Eric Suarez</span>, a
+        full-stack software engineer. By day, I'm fortunate to work at{" "}
+        <span className="not-prose">
           <Badge href="https://microsoft.com">
-          <img
-            alt="Microsoft logomark"
-            src="/microsoft-logo.png"
-            className="!mr-1"
-            width="14"
-            height="14"
-          />
+            <img
+              alt="Microsoft logomark"
+              src="/microsoft-logo.png"
+              className="!mr-1"
+              width="14"
+              height="14"
+            />
             Microsoft
           </Badge>
-        </span> , where I get to come up with solutions to interesting business problems through code.
+        </span>{" "}
+        , where I get to come up with solutions to interesting business problems
+        through code.
       </p>
       <SkillsSection />
-      <h2 className="text-xl font-semibold mb-2">What Drives Me</h2>
-        <p className="prose prose-neutral dark:prose-invert mb-6">
-            I thrive on <span className="font-semibold">learning new things</span>. Whether it's mastering the latest JavaScript framework or exploring design principles, I'm always hungry for knowledge and love to share cool things I learn with others. I believe that sharing knowledge not only enriches our community but also helps us grow collectively.
-        </p>
-        <p className="prose prose-neutral dark:prose-invert">
-            Let's connect! Whether you're a fellow developer, a curious learner, or just someone who appreciates good food, I'd love to connect. Feel free to explore my portfolio, read my blog posts, and drop me a message. Let's build something amazing together! 🚀
-        </p>
+      <p className="prose prose-neutral dark:prose-invert mb-6">
+        I enjoy <span className="font-semibold">learning new things</span>.
+        Whether it's mastering the latest JavaScript framework or exploring
+        design principles, I'm always hungry for knowledge and love to share
+        cool things I learn with others. I believe that sharing knowledge not
+        only enriches our community but also helps us grow collectively.
+      </p>
+      <p className="prose prose-neutral dark:prose-invert">
+        Let's connect! Whether you're a fellow developer, a curious learner, or
+        just someone who appreciates good food, I'd love to connect. Feel free
+        to explore my portfolio, read my blog posts, and drop me a message.
+        Let's build something amazing together! 🚀
+      </p>
     </section>
   );
 }
