@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Badge(props) {
   return (
     <a
@@ -53,7 +55,8 @@ export default function Page() {
       </h1>
       <p className="prose prose-neutral dark:prose-invert mb-6">
         Hello! I'm <span className="font-semibold">Eric Suarez</span>, a
-        full-stack software engineer. By day, I'm fortunate to work at{" "}
+        full-stack software engineer. By day, I'm fortunate to{" "}
+        <Link href="/work">work</Link> at{" "}
         <span className="not-prose">
           <Badge href="https://microsoft.com">
             <img
