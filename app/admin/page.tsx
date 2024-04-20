@@ -1,3 +1,4 @@
+/*
 import { auth } from 'app/auth';
 import { getGuestbookEntries } from 'app/db/queries';
 import { redirect } from 'next/navigation';
@@ -22,3 +23,4 @@ export default async function GuestbookPage() {
     </section>
   );
 }
+*/
