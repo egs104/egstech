@@ -1,7 +1,7 @@
 'use server';
 
-import { auth } from 'app/auth';
-import { type Session } from 'next-auth';
+//import { auth } from 'app/auth';
+//import { type Session } from 'next-auth';
 import { sql } from './postgres';
 import { revalidatePath, unstable_noStore as noStore } from 'next/cache';
 
@@ -15,7 +15,7 @@ export async function increment(slug: string) {
   `;
 }
 
-async function getSession(): Promise<Session> {
+/*async function getSession(): Promise<Session> {
   let session = await auth();
   if (!session || !session.user) {
     throw new Error('Unauthorized');
@@ -80,3 +80,4 @@ export async function deleteGuestbookEntries(selectedEntries: string[]) {
   revalidatePath('/admin');
   revalidatePath('/guestbook');
 }
+*/
